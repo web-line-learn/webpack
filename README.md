@@ -1,21 +1,58 @@
 # webpack
-- ÕâÊÇwebpack ÈëÃÅÊ¹ÓÃÊ¾Àı
-- ¹Ù·½Ê¾ÀıÍ¦ºÃµÄ,¾ÍÊÇÃ»ÓĞÌá¹©Ä¿Â¼½á¹¹,¸ù¾İ´úÂëÒıÓÃÎÄ¼şÂ·¾¶,×ÜËãÊÇ³É¹¦ÁË(×÷ÎªÒ»¸öjava¿ª·¢,ÅªÇ°¶Ë¹²½¨·¢ÏÖ»¹ÊÇÍ¦Ä°ÉúµÄ)
-- ºóÃæ¿´µ½ÈëÃÅÖ¸ÄÏ,²Å·¢ÏÖÊÇÎÒÃ»ÓĞÕÒ¶ÔÎÄµµÈë¿Ú
+- è¿™æ˜¯webpack å…¥é—¨ä½¿ç”¨ç¤ºä¾‹
+- å®˜æ–¹ç¤ºä¾‹æŒºå¥½çš„,å°±æ˜¯æ²¡æœ‰æä¾›ç›®å½•ç»“æ„,æ ¹æ®ä»£ç å¼•ç”¨æ–‡ä»¶è·¯å¾„,æ€»ç®—æ˜¯æˆåŠŸäº†(ä½œä¸ºä¸€ä¸ªjavaå¼€å‘,å¼„å‰ç«¯å…±å»ºå‘ç°è¿˜æ˜¯æŒºé™Œç”Ÿçš„)
+- åé¢çœ‹åˆ°å…¥é—¨æŒ‡å—,æ‰å‘ç°æ˜¯æˆ‘æ²¡æœ‰æ‰¾å¯¹æ–‡æ¡£å…¥å£
 
-# ²Î¿¼ÎÄµµ
-https://webpack.docschina.org/guides/ ÈëÃÅÖ¸ÄÏ
-https://webpack.docschina.org/  ¹ÙÍø¼òµ¥Ê¾Àı
+# å‚è€ƒæ–‡æ¡£
+https://webpack.docschina.org/guides/ å…¥é—¨æŒ‡å—
+https://webpack.docschina.org/  å®˜ç½‘ç®€å•ç¤ºä¾‹
 
-# ¸öÈËÊ¹ÓÃ×Ü½á
+# ä¸ªäººä½¿ç”¨æ€»ç»“
 http://note.youdao.com/noteshare?id=44b0bf55c631af5828289d400b6cf8ff
 
-# Ê¾ÀıÊ¹ÓÃ
+- nodejs å®‰è£…æ•™ç¨‹: http://www.runoob.com/nodejs/nodejs-install-setup.html
+- webpack å®‰è£…
+1 npm install --global webpack
+2 ç„¶åè¿˜è¦å®‰è£… webpack-cli npm install --save-dev webpack-cli
+
+# ç¤ºä¾‹ä½¿ç”¨
 1 git clone https://github.com/web-line-learn/webpack.git && cd webpack
 
-2 ÔËĞĞÃüÁî webpack ´ò¿ªindex.html¼´¿É²é¿´½á¹û(F12 ¿ØÖÆÌ¨Êä³ö)
+2 è¿è¡Œå‘½ä»¤ webpack æ‰“å¼€index.htmlå³å¯æŸ¥çœ‹ç»“æœ(F12 æ§åˆ¶å°è¾“å‡º)
 
-# ÏîÄ¿ËµÃ÷
-- demo1-simpled ²Î¿¼ https://webpack.docschina.org/ (½¨Òé´Ódemo2¿ªÊ¼¿´)
-- demo2-started ²Î¿¼ https://webpack.docschina.org/guides/getting-started/
-- demo3-resources-manage ²Î¿¼ https://webpack.docschina.org/guides/asset-management/
+# é¡¹ç›®è¯´æ˜
+- demo1-simpled å‚è€ƒ https://webpack.docschina.org/ (å»ºè®®ä»demo2å¼€å§‹çœ‹)
+- demo2-started å‚è€ƒ https://webpack.docschina.org/guides/getting-started/
+- demo3-resources-manage å‚è€ƒ https://webpack.docschina.org/guides/asset-management/
+
+# webpack å¼€å‘æµç¨‹
+- é¦–æ¬¡æ„å»ºé¡¹ç›®
+1 npm init -y (ç”Ÿæˆpackage.jsonæ–‡ä»¶)
+2 npm install webpack webpack-cli --save-dev  (å®‰è£…webpack-cli, ç”Ÿæˆç›®å½•æ·»åŠ åˆ°.gitignoreä¸­)
+
+- è°ƒæ•´package.json æ–‡ä»¶
+å»é™¤"main" å±æ€§
+æ·»åŠ "private": trueå±æ€§
+scriptå±æ€§ä¸­æ·»åŠ å±æ€§ :
+    "build": "webpack",
+    "watch": "webpack --watch",
+
+- è¿è¡Œæ„å»ºå‘½ä»¤  
+npm run build (ä¸ä¼šå®æ—¶æ˜¾ç¤ºæ”¹åŠ¨)
+npm run watch (éšæ—¶ç›‘æµ‹æºç æ”¹åŠ¨)
+
+- æ·»åŠ gitignore æ–‡ä»¶
+*/node_modules
+*/node_modules/**
+git add .gitignore
+git commite -m "å¿½ç•¥ç”Ÿæˆçš„nodeä¾èµ–"
+
+# å¸¸ç”¨æ’ä»¶
+npm install --save-dev html-webpack-plugin (è®¾å®š [HtmlWebpackPlugin](https://webpack.docschina.org/guides/output-management/))
+npm install clean-webpack-plugin --save-dev (æ¯æ¬¡æ„å»ºå‰æ¸…ç† /dist æ–‡ä»¶å¤¹)
+
+# å®‰è£…æœ¬åœ°åº“(æ¯ä¸ªé¡¹ç›®,æŒ‰éœ€åŠ è½½)
+npm install --save lodash
+npm install --save-dev style-loader css-loader (åŠ è½½css)
+npm install --save-dev file-loader (åŠ è½½å›¾ç‰‡ç­‰)
+npm install --save-dev csv-loader xml-loader (åŠ è½½æ•°æ®xmlç­‰æ–‡ä»¶,jsonæ˜¯é»˜è®¤çš„)

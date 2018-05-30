@@ -1,7 +1,8 @@
-//ÐèÒª ±¾µØ°²×° npm install --save lodash  ²Î¿¼ÎÄµµ: https://webpack.docschina.org/guides/getting-started/
-//ÏÔÊ½ÒªÇóÒýÈëµÄ lodash ±ØÐë´æÔÚ£¬È»ºó½«Ëü°ó¶¨Îª _
+//ï¿½ï¿½Òª ï¿½ï¿½ï¿½Ø°ï¿½×° npm install --save lodash  ï¿½Î¿ï¿½ï¿½Äµï¿½: https://webpack.docschina.org/guides/getting-started/
+//ï¿½ï¿½Ê½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ lodash ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª _
 import _ from 'lodash';
 import './style.css'
+import Icon from './wechat.jpg';
 
 function component(){
 	let element = document.createElement('div');
@@ -9,6 +10,10 @@ function component(){
 	// Lodash, now imported by this script
 	element.innerHTML = _.join(['Hello','webpack'],' ');
 	element.classList.add('hello');
+
+	var myIcon=new Image();
+	myIcon.src = Icon;
+	element.appendChild(myIcon);
 
 	return element;
 }
