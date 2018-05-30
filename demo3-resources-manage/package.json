@@ -1,0 +1,21 @@
+{
+  "name": "demo3-resources-manage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "zyan",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "main": "webpack.config.js",
+  "description": ""
+}
