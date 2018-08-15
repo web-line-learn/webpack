@@ -1,8 +1,8 @@
 # 说明
 这是一个todo应用, webpack+vue 实现
 
-- # 当前应用参考视频
-[慕课网-Vue+Webpack打造todo应用 ](https://www.imooc.com/search/course?words=vue&type=mf)
+# 当前应用参考视频
+- [慕课网-Vue+Webpack打造todo应用 ](https://www.imooc.com/search/course?words=vue&type=mf)
 
 #webpack 参考
 - [其他webpack demo- 参考readme](https://github.com/web-line-learn/webpack)
@@ -15,19 +15,21 @@
 1 参考[webpack文档安装依赖](https://webpack.docschina.org/guides/getting-started/)
 2 启动项目 npx webpack --config webpack.config.js
 
-## webpack.config.js 示例
-[webpack 设置环境](https://cn.vuejs.org/v2/guide/installation.html)
-在 webpack 4+ 中，你可以使用 mode 选项,但是在 webpack 3 及其更低版本中，你需要使用 DefinePlugin
-  const path = require('path');
 
-  module.exports = {
-    mode: 'development',
-    entry: './src/index.js',
-    output: {
-      filename: 'main.js',
-      path: path.resolve(__dirname, 'dist')
-    }
-  };
+## webpack.config.js 示例
+
+    const path = require('path');
+    
+    module.exports = {
+      mode: 'development',
+      entry: './src/index.js',
+      output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist')
+      }
+    };
+- [webpack 设置环境](https://cn.vuejs.org/v2/guide/installation.html)
+- 在 webpack 4+ 中，你可以使用 mode 选项,但是在 webpack 3 及其更低版本中，你需要使用 DefinePlugin
 
 
 ## 优化启动命令
