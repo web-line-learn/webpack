@@ -1,0 +1,11 @@
+{
+  "name": "itodo",
+  "version": "1.0.0",
+  "description": "这是一个todo应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zyan",
+  "license": "ISC"
+}
